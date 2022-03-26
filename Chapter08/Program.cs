@@ -20,6 +20,6 @@ public class RegularExpressions
 
         Uri uri = new Uri(url);
 
-        WriteLine($"")
+        WriteLine($"");
     }
 }
