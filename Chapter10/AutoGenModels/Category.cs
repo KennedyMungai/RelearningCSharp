@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace WorkingWithEFCore.AutoGen
+namespace WorkingWithEFCore.Autogen
 {
     [Index("CategoryName", Name = "CategoryName")]
     public partial class Category

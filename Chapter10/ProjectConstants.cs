@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Packt.Shared
+namespace Packt.Shared;
+
+public class ProjectConstants
 {
-    public class ProjectConstants
-    {
-        public const string DatabaseProvider = "SQLServer";
-    }
+    public const string DatabaseProvider = "SqlServer";
 }

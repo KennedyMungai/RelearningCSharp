@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations.Schema;                 //[Column]
 
 namespace Packt.Shared
 {
@@ -21,7 +21,7 @@ namespace Packt.Shared
 
         public Category()
         {
-            //to enable developers to add products to a Category we must
+            //To enable developers to add products to a Category, we must
             //initialize the navigation property to an empty collection
             Products = new HashSet<Product>();
         }
