@@ -23,7 +23,6 @@ namespace WorkingWithEFCore.Autogen
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Northwind;Trusted_Connection=true;MultipleActiveResultSets=true;");
             }
         }
@@ -47,6 +46,12 @@ namespace WorkingWithEFCore.Autogen
             });
 
             OnModelCreatingPartial(modelBuilder);
+        }
+
+        protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+        {
+            configurationBuilder.Properties<string>().HaveMaxLength(50);
+            //configurationBuilder.IgnoreAny(IDoNotMap);
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

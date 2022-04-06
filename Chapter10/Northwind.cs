@@ -31,6 +31,10 @@ namespace Packt.Shared
                 .Property(category => category.CategoryName)
                 .IsRequired()                                           //Not null
                 .HasMaxLength(15);
+
+            //Global filter to remove discontinued products
+            modelBuilder.Entity<Product>()
+                .HasQueryFilter(p => !p.Discontinued);
         }
     }
 }
