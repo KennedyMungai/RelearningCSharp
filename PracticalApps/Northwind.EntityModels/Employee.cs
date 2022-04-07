@@ -20,8 +20,10 @@ namespace Packt.Shared
         [Key]
         [Column("EmployeeID")]
         public int EmployeeId { get; set; }
+        [Required]
         [StringLength(20)]
         public string LastName { get; set; } = null!;
+        [Required]
         [StringLength(10)]
         public string FirstName { get; set; } = null!;
         [StringLength(30)]

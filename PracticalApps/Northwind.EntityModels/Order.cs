@@ -26,6 +26,7 @@ namespace Packt.Shared
         public int OrderId { get; set; }
         [Column("CustomerID")]
         [StringLength(5)]
+        [RegularExpression("[A-Z]{5}")]
         public string? CustomerId { get; set; }
         [Column("EmployeeID")]
         public int? EmployeeId { get; set; }
