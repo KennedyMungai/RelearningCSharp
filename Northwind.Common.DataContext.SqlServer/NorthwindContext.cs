@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Packt.Shared;
 
-namespace Packt.Shared
+namespace Northwind.Common.DataContext.SqlServer
 {
     public partial class NorthwindContext : DbContext
     {
@@ -244,8 +245,6 @@ namespace Packt.Shared
             {
                 entity.HasKey(e => e.RegionId)
                     .IsClustered(false);
-
-                entity.Property(e => e.RegionId).ValueGeneratedNever();
 
                 entity.Property(e => e.RegionDescription).IsFixedLength();
             });

@@ -22,6 +22,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoursesAndStudents", "Cours
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticalApps", "PracticalApps\PracticalApps.csproj", "{3251924F-B31B-4E59-883A-7DEF3E97793A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.DataContext.SqlServer", "Northwind.Common.DataContext.SqlServer\Northwind.Common.DataContext.SqlServer.csproj", "{1F36382F-6ED1-48E3-B2C6-F3F076EB478D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +62,10 @@ Global
 		{3251924F-B31B-4E59-883A-7DEF3E97793A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3251924F-B31B-4E59-883A-7DEF3E97793A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3251924F-B31B-4E59-883A-7DEF3E97793A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F36382F-6ED1-48E3-B2C6-F3F076EB478D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F36382F-6ED1-48E3-B2C6-F3F076EB478D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F36382F-6ED1-48E3-B2C6-F3F076EB478D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F36382F-6ED1-48E3-B2C6-F3F076EB478D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
